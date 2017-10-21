@@ -81,6 +81,7 @@ max_lines_visible = -1
 
 transform/pos = Vector2( 511.05, 304.436 )
 transform/scale = Vector2( 4.0356, 2.35413 )
+z/z = -1
 texture = ExtResource( 4 )
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
