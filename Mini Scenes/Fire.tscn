@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=1]
+
+[ext_resource path="res://scripts/Fire.gd" type="Script" id=1]
+[ext_resource path="res://texture/laserRed.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10.4241, 11.7268 )
+
+[node name="Fire" type="KinematicBody2D"]
+
+transform/pos = Vector2( -375.688, 76.1198 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1.3917, 0, 0, 2.81562, 402.881, 289.808 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+collision/margin = 0.08
+script/script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+
+transform/pos = Vector2( 405.999, 293.992 )
+transform/scale = Vector2( 0.229945, 0.37746 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+transform/pos = Vector2( 402.881, 289.808 )
+transform/scale = Vector2( 1.3917, 2.81562 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+__meta__ = {
+"_edit_group_": true
+}
+
+
