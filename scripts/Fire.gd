@@ -11,6 +11,5 @@ func  _fixed_process(delta):
 	var curPosFire = self.get_pos()
 	curPosFire.y -= fireY
 	self.set_pos(curPosFire)
-
-	if curPosFire.y < -200:
+	if curPosFire.y < -400:
 		queue_free()
